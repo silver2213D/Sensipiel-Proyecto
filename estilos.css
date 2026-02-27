@@ -1,5 +1,5 @@
 :root {
-    --primary: #A01C2E;
+    --primary: #d17e1f;
     --secondary: #C1121F;
     --accent: #D4A574;
     --light: #F5F3F0;
@@ -174,6 +174,31 @@ body {
     background: var(--light);
     border-radius: 2px;
     transition: transform 0.3s;
+}
+
+/* background for piel sensible card */
+.benefit-card.piel-sensible {
+    background: url('images/piel-sensible.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+/* optional overlay for better text readability */
+.benefit-card.piel-sensible::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    border-radius: 2px;
+}
+
+.benefit-card.piel-sensible h3,
+.benefit-card.piel-sensible p {
+    position: relative;
+    z-index: 1;
 }
 
 .benefit-card:hover {
@@ -966,7 +991,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #000000 0%, #764ba2 100%);
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -1080,8 +1105,8 @@ body {
 
 .btn-secondary {
     background: white;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: #e44017;
+    border: 2px solid #e63b07;
     padding: 10px 25px;
     border-radius: 25px;
     cursor: pointer;
